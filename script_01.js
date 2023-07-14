@@ -73,33 +73,54 @@
 
 /****** Fallunterscheidung / SWITCH|CASE 1 ******/
 
-const firstName = "Jane";
-let job;
+// const firstName = "Jane";
+// let job;
 
 // job = prompt("Welchen Job hast du?");
 
-job = "driver";         // .. fährt TAXI! / UBER
+// job = "driver";         // .. fährt TAXI! / UBER
 // job = "diver";          // .. taucht im Rhein!
 // job = "artist";         // .. malt ein Bild!
 // job = "pilot";          // .. macht etwas anderes! --> default
 // job = "teacher";        // .. unterrichtet!
 // job = "instructor";     // .. unterrichtet!
 
-switch (job) {
-    case "driver":
-        console.log("Jane fährt TAXI!");
+// switch (job) {
+//     case "driver":
+//         console.log("Jane fährt TAXI!");
+//         break;
+//     case "diver":
+//         console.log("Jane taucht im Rhein!");
+//         break;
+//     case "artist":
+//         console.log("Jane malt ein Bild!");
+//         break;
+//     case "teacher":
+//     case "instructor":   
+//         console.log("Jane unterrichtet!");
+//         break;
+//     default: // default zuerst!
+//         console.log("Jane macht etwas anderes!");
+//         break;
+// }
+
+/******** Fallunterscheidung / SWITCH|CASE 2 *******/
+
+const cond = false;
+const a = 20;
+
+ switch (cond) {
+    case (a==1):
+        console.log("a ist gleich 1!");
         break;
-    case "diver":
-        console.log("Jane taucht im Rhein!");
+    case (a==2):
+        console.log("a ist gleich 2!");
         break;
-    case "artist":
-        console.log("Jane malt ein Bild!");
-        break;
-    case "teacher":
-    case "instructor":   
-        console.log("Jane unterrichtet!");
-        break;
-    default: // default zuerst!
-        console.log("Jane macht etwas anderes!");
+    default:
+        console.log("a hat einen anderen Wert!");
         break;
 }
+
+
+ 
+
